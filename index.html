@@ -1,0 +1,218 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Nathaniel Toba Website</title>
+  <style>
+    body { background: #f0f0f0; font-family: Arial; margin: 0; padding: 0; }
+    header { background: #222; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 100; }
+    .logo { display: flex; align-items: center; }
+    .logo img { width: 50px; height: 50px; margin-right: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; cursor: pointer; }
+    .container { padding: 90px 20px 20px 20px; }
+    .page { display: none; }
+    .active { display: block; }
+    .box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .button { padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold; }
+    .button:hover { background: #45a049; }
+    footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <!-- LOGO FIX -->
+    <img src="assets/logo.png" alt="Logo">
+    <div>
+      <div style="font-size: 18px;">Nathaniel Toba</div>
+      <div style="font-size: 12px;">@Nathaniel Toba - All rights reserved</div>
+    </div>
+  </div>
+
+  <nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('gaming')">Gaming</a>
+    <a onclick="showPage('coding')">Coding</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <div class="box">
+      <h1>Welcome to My World</h1>
+      <p>Hey, I’m Nathaniel — a tech enthusiast, gamer, and self-taught coder. This website is where I share what I’m learning, what I’m building, and what I’m into. If you’re interested in gaming, coding, or just improving your skills through consistency and practice, you’re in the right place.</p>
+      <p>I’m not here to pretend I know everything. I’m here to grow, explore, and create. I’m the kind of person who likes to figure things out on my own, especially when something doesn’t work the first time. Whether it’s fixing a game issue, optimizing performance on a low-end PC, or learning a new programming concept, I’m always up for the challenge.</p>
+
+      <h3>What You’ll Find Here</h3>
+      <h4>Gaming</h4>
+      <p>Gaming is more than just entertainment to me — it’s a way to build skills like strategy, patience, and problem-solving. I enjoy games that challenge me, especially those that require focus and improvement over time.</p>
+      <p>I also enjoy helping others with gaming problems, like:</p>
+      <ul>
+        <li>Game installation issues</li>
+        <li>Crashes and performance problems</li>
+        <li>Low-end PC optimization</li>
+        <li>Finding games that work on older systems</li>
+      </ul>
+      <p>While I enjoy playing, I’m also interested in understanding how games work behind the scenes and what makes them run smoothly or lag.</p>
+
+      <h4>Coding</h4>
+      <p>Coding is where I build real projects and turn ideas into reality. I’m currently learning and working with:</p>
+      <ul>
+        <li>JavaScript — for interactive websites and dynamic features</li>
+        <li>Python — for logic, problem solving, and small applications</li>
+        <li>HTML — the foundation of every website</li>
+        <li>CSS — the style and design that makes websites look good</li>
+      </ul>
+      <p>I’m not just learning these languages — I’m applying them to real projects. I believe the best way to learn coding is by building, testing, failing, and trying again. This website is a reflection of that process.</p>
+
+      <h3>My Approach</h3>
+      <p>I’m a believer in consistent progress. I don’t expect to become an expert overnight, and I don’t get discouraged when I don’t get things right the first time. Instead, I take it as a chance to learn and improve.</p>
+      <p>I focus on:</p>
+      <ul>
+        <li>Understanding the basics before moving to advanced topics</li>
+        <li>Practicing regularly to build strong skills</li>
+        <li>Solving problems instead of avoiding them</li>
+        <li>Building projects that show what I’ve learned</li>
+      </ul>
+
+      <h3>Why This Website Exists</h3>
+      <p>This website is more than a personal page — it’s a space where I track my growth, share my projects, and connect with others who have similar interests. Over time, it will grow as I learn more and build more.</p>
+      <p>If you’re here, you might be someone who:</p>
+      <ul>
+        <li>Wants to learn coding</li>
+        <li>Enjoys gaming and tech</li>
+        <li>Likes practical, hands-on learning</li>
+        <li>Wants to improve and build new skills</li>
+      </ul>
+
+      <h3>Let’s Build Something</h3>
+      <p>Thanks for stopping by. Whether you’re here to learn, explore, or just see what I’m working on, I appreciate the support. I’m always open to ideas, collaboration, and new challenges.</p>
+      <p>If you want to connect or share ideas, you can reach out through the contact section.</p>
+      <p>Let’s build something meaningful — one step at a time.</p>
+
+      <div style="margin-top: 20px;">
+        <button class="button" onclick="showPage('gaming')">Go to Gaming</button>
+        <button class="button" onclick="showPage('coding')">Go to Coding</button>
+        <button class="button" onclick="showPage('about')">Go to About</button>
+        <button class="button" onclick="showPage('contact')">Go to Contact</button>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <button class="button" onclick="window.open('https://www.youtube.com/@shadowstrikeryt-f1r/shorts', '_blank')">
+          Visit My YouTube Channel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page">
+    <div class="box">
+      <h1>About Me</h1>
+      <p>Hi, I’m Nathaniel — a curious, determined, and hands-on learner with a strong interest in technology, gaming, and problem-solving. I enjoy figuring things out, especially when something doesn’t work the first time. Whether it’s fixing software issues, understanding how games run on different systems, or solving math problems step by step, I like learning by doing.</p>
+      <p>I’m especially interested in computer technology and games, particularly football games on PC. Over time, I’ve learned how system specs, operating systems, and software compatibility affect performance. Instead of giving up when something fails to install or crashes, I prefer to test solutions, research alternatives, and try again. That mindset has helped me grow more confident with computers and troubleshooting.</p>
+      <p>Alongside tech, I’m also focused on learning and improving academically, especially in subjects like mathematics. I believe progress comes from practice, patience, and asking questions when something isn’t clear. I don’t mind making mistakes — I see them as part of the process of getting better.</p>
+      <p>What sets me apart is my willingness to learn and adapt. I’m not afraid to start small, use low-end resources, or take alternative routes to reach my goals. I value honesty, growth, and consistency, and I’m always looking for ways to improve my skills and knowledge.</p>
+      <p>This website is a place where I share who I am, what I’m learning, and what I’m interested in. Over time, it will grow along with me — showcasing my progress, experiences, and projects. If you’re someone who enjoys technology, learning, or creative problem-solving, you’ll probably feel right at home here.</p>
+      <p>Thanks for stopping by.</p>
+      <button class="button" onclick="window.open('https://www.youtube.com/@shadowstrikeryt-f1r/shorts', '_blank')">
+        Visit My YouTube Channel
+      </button>
+    </div>
+  </div>
+
+  <!-- GAMING PAGE -->
+  <div id="gaming" class="page">
+    <div class="box">
+      <h1>Gaming - Blox Fruits (2026)</h1>
+      <p>Blox Fruits is an action RPG experience on Roblox that focuses on combat, exploration, and character progression. Players choose between becoming a pirate or a marine, explore different islands, complete quests, and fight enemies to earn experience and rewards. The core feature of the game is collecting fruits, which grant unique abilities and define a player’s fighting style.</p>
+      <p>The game’s strength lies in its simplicity and consistent gameplay loop. Players are able to jump in quickly, understand the mechanics, and start progressing without needing a long tutorial or complicated systems. Blox Fruits is not meant to be a deep narrative-driven game; instead, it is designed for fast-paced combat and long-term character development.</p>
+
+      <h3>Gameplay & Progression</h3>
+      <p>In Blox Fruits, progression is built around leveling up, improving your combat abilities, and acquiring rare fruits. Each fruit provides a distinct set of skills, which can change the way a player approaches combat. Some fruits offer powerful attacks and transformations, while others focus on speed, control, or defensive abilities.</p>
+      <p>Most gameplay involves:</p>
+      <ul>
+        <li>Completing quests for experience and rewards</li>
+        <li>Defeating bosses and enemies</li>
+        <li>Exploring islands to unlock new areas</li>
+        <li>Training and upgrading character strength</li>
+        <li>Trading or obtaining fruits through various game systems</li>
+      </ul>
+      <p>Because of this structure, the game can be grind-heavy. Players who enjoy long-term progression and improving their character over time will find it rewarding. However, those looking for quick, casual gameplay may find the grind repetitive after a while.</p>
+
+      <h3>Combat and Strategy</h3>
+      <p>Combat in Blox Fruits is based on timing, positioning, and understanding your chosen fruit’s abilities. Players must learn how to use their powers effectively, manage cooldowns, and adapt to different enemy types.</p>
+      <p>The game supports both solo play and group activities. While solo players can progress steadily, teaming up with others can make boss fights and difficult quests easier. The player community also adds a competitive element, especially when it comes to PvP battles and rare fruit acquisition.</p>
+
+      <h3>Updates and Modern Features (2026)</h3>
+      <p>By 2026, Blox Fruits continues to receive updates that expand content and improve balance. Recent updates focus on:</p>
+      <ul>
+        <li>New islands and bosses to extend late-game progression</li>
+        <li>Fruit reworks and balancing adjustments</li>
+        <li>Quality of life improvements such as UI updates and performance fixes</li>
+        <li>Event-based content that adds temporary challenges and rewards</li>
+      </ul>
+      <p>These updates keep the game active and give players new goals to work towards. While not every update changes the core gameplay, they help maintain interest for long-term players.</p>
+
+      <h3>What to Expect</h3>
+      <p>Blox Fruits is best experienced by players who enjoy:</p>
+      <ul>
+        <li>Ability-based combat</li>
+        <li>Character progression and upgrades</li>
+        <li>Exploration and unlocking new areas</li>
+        <li>A long-term grinding system</li>
+      </ul>
+      <p>It may not be ideal for players seeking deep storytelling or high-end visuals. However, for those who enjoy consistent progression, variety in abilities, and ongoing updates, Blox Fruits remains a strong choice within Roblox.</p>
+
+      <h3>Final Summary</h3>
+      <p>Overall, Blox Fruits is a game built around progression, combat, and exploration. It may not be the most polished or story-driven game, but it offers a solid experience for players who enjoy grinding and mastering different abilities. The game continues to evolve through updates, making it a lasting option for Roblox players who want a long-term goal and a competitive environment.</p>
+    </div>
+  </div>
+
+  <!-- CODING PAGE -->
+  <div id="coding" class="page">
+    <div class="box">
+      <h1>Coding</h1>
+      <p>Coding is one of the ways I turn ideas into real, working projects. I enjoy learning how things work behind the scenes on the web and experimenting with different technologies to build, style, and improve digital experiences. I focus on writing clear code, understanding fundamentals, and continuously improving my skills through practice and problem-solving.</p>
+      <p><strong>Below are the main languages I work with:</strong></p>
+      <p><strong>JavaScript:</strong> JavaScript allows me to bring websites to life. I use it to create interactivity, handle user actions, and control how elements behave on a page.</p>
+      <p><strong>Python:</strong> Python is one of my favorite languages because of its simplicity and power. I use it for learning core programming concepts, solving logical problems, and building small scripts and projects.</p>
+      <p><strong>HTML:</strong> HTML is the foundation of every website I build. It helps me structure content properly — headings, paragraphs, images, links, and more.</p>
+      <p><strong>CSS:</strong> CSS is what makes a website look good. I use it to design layouts, choose colors, adjust spacing, and make pages visually appealing.</p>
+      <p><strong>My Approach:</strong> I believe coding is about learning, testing, failing, and improving. I don’t rush the process — I focus on understanding why things work, not just copying solutions. As I continue learning, this page will grow with new projects, skills, and technologies.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT PAGE -->
+  <div id="contact" class="page">
+    <div class="box">
+      <h1>Reviews & Complaints</h1>
+      <form action="mailto:tobanathaniel1@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 10px 0;">
+        <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin: 10px 0;">
+        <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px; margin: 10px 0;" rows="6"></textarea>
+        <button class="button" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Nathaniel Toba — All rights reserved
+</footer>
+
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
